@@ -1,9 +1,9 @@
 import {Injectable} from 'angular2/core';
-import {CONTACTS} from './mock-contact.ts';
+import {CONTACTS} from './mock-contact';
 
 @Injectable()
 export class ContactService{
-    getContact(){
+    getContacts(){
         return Promise.resolve(CONTACTS);
     }
 }
